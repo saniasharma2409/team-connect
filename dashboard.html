@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div>
+
+            <div class="logo">
+
+                <i class="fa-solid fa-users"></i>
+                <h2>Emply</h2>
+
+            </div>
+
+            <ul class="menu">
+
+                <li id="dashboard">
+                    <i class="fa-solid fa-chart-line" id=""></i>
+                    Dashboard
+                </li>
+
+                <li id="employees">
+                    <i class="fa-solid fa-users"></i>
+                    Employees
+                </li>
+
+                <li id="settings">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="logout">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+
+
+        <!-- Navbar -->
+
+        <header class="navbar">
+
+            <div class="title">
+
+                <h1>Employee Dashboard</h1>
+                <p>Welcome back, Admin 👋</p>
+
+            </div>
+
+
+
+            <div class="thought-navbar">
+
+                <h3>Thought of the Day</h3>
+
+                <input class="thought" type="text" placeholder="Share your thought...">
+            </div>
+
+
+
+            <div class="mprofile">
+
+                <img src="https://i.pravatar.cc/45" alt="profile">
+
+                <span>Admin</span>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- Dashboard Grid -->
+
+        <section class="top-layout">
+
+
+
+            <!-- Left Side -->
+
+            <div class="left-content">
+
+
+
+                <!-- Summary Cards -->
+
+                <div class="summary-cards">
+
+                    <div class="card">
+
+                        <div class="icon">
+
+                            <i class="fa-solid fa-users"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h3>Total Employees</h3>
+                            <p class="count"></p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="card">
+
+                        <div class="icon">
+
+                            <i class="fa-solid fa-user-plus"></i>
+
+                        </div>
+
+                        <div class="recentt">
+
+                            <h3>Recent Employees</h3>
+                            <p class="countr"></p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="card">
+
+                        <div class="icon">
+
+                            <i class="fa-solid fa-sitemap"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h3>Departments</h3>
+                            <p>5</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Recent Employees -->
+
+                <div class="box recent-employees">
+
+                    <div class="box-header">
+
+                        <h2>Recent Employees</h2>
+
+                    </div>
+
+
+
+                    <div class="employee-list">
+
+                    <!-- <div class="employee">
+
+                            <img src="https://i.pravatar.cc/50?img=11">
+
+                            <div>
+
+                                <h4>Sarah Wilson</h4>
+                                <p>UI Designer</p>
+
+                            </div>
+
+                        </div> -->
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Gender Distribution -->
+
+            <div class="box gender-chart">
+
+    <h2>Gender Distribution</h2>
+
+    <div class="chart-area">
+
+        <div class="gender-pie">
+
+            <div class="pie-center">
+                <h3>50%</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="gender-legend">
+
+        <div>
+            <span class="male-dot"></span>
+            Male 50%
+        </div>
+
+        <div>
+            <span class="female-dot"></span>
+            Female 50%
+        </div>
+
+    </div>
+
+
+    <div class="equality-text">
+
+        <p>
+            "Our company believes in equality"
+            <br>
+            - Equal hiring opportunity
+        </p>
+
+    </div>
+
+
+</div>
+
+        </section>
+
+
+
+        <!-- Employee Table -->
+
+        <section class="box employee-table">
+
+            <div class="box-header">
+
+                <h2>Employee Table</h2>
+
+            </div>
+
+
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Name</th>
+                        <th>Designation</th>
+                        <th>Email</th>
+
+                    </tr>
+
+                </thead>
+
+
+
+                <tbody class="tbody">
+
+                    <!--<tr class="tr">
+
+                        <td class="column1">Sarah Wilson</td>
+                        <td class="column2">UI Designation</td>
+                        <td class="column3">sarah@gmail.com</td>
+
+                    </tr>-->
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+<script src="sidebar.js"></script>
+<script src="dashboard.js"></script>
+<script src="theme.js"></script>
+</body>
+</html>

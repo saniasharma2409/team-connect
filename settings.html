@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | Employee Management Dashboard</title>
+
+    <link rel="stylesheet" href="settings.css">
+     <link rel="stylesheet" href="dashboard.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div>
+
+            <div class="logo">
+
+                <i class="fa-solid fa-users"></i>
+                <h2>Emply</h2>
+
+            </div>
+
+            <ul class="menu">
+
+                <li id="dashboard">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Dashboard
+                </li>
+
+                <li id="employees">
+                    <i class="fa-solid fa-users"></i>
+                    Employees
+                </li>
+
+                <li id="settings" class="active">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="logout">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Navbar -->
+
+        <header class="navbar">
+
+            <div class="title">
+
+                <h1>Settings</h1>
+                <p>Customize your dashboard preferences</p>
+
+            </div>
+
+            <div class="thought-navbar">
+
+                <h3>Thought of the Day</h3>
+
+                <input class="thought" type="text" placeholder="Share your thought...">
+            </div>
+
+            <div class="mprofile">
+
+                <img src="https://i.pravatar.cc/45" alt="profile">
+
+                <span>Admin</span>
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- Settings Container -->
+
+        <section class="settings-container">
+
+            <!-- Theme -->
+
+            <div class="setting-card">
+
+                <div class="setting-info">
+                    <i class="fa-solid fa-palette"></i>
+
+                    <div>
+                        <h3>Theme Preference</h3>
+                        <p>Switch between Light and Dark Mode.</p>
+                    </div>
+                </div>
+
+                <button id="theme-btn">
+                    Toggle Theme
+                </button>
+
+            </div>
+
+
+
+            <!-- Notifications -->
+
+            <div class="setting-card">
+
+                <div class="setting-info">
+                    <i class="fa-solid fa-bell"></i>
+
+                    <div>
+                        <h3>Notifications</h3>
+                        <p>Manage dashboard notifications.</p>
+                    </div>
+                </div>
+
+                <button class="disabled-btn">
+                    Coming Soon
+                </button>
+
+            </div>
+
+
+
+            <!-- Security -->
+
+            <div class="setting-card">
+
+                <div class="setting-info">
+                    <i class="fa-solid fa-lock"></i>
+
+                    <div>
+                        <h3>Security</h3>
+                        <p>Change password and security settings.</p>
+                    </div>
+                </div>
+
+                <button class="disabled-btn">
+                    Coming Soon
+                </button>
+
+            </div>
+
+
+
+            <!-- Language -->
+
+            <div class="setting-card">
+
+                <div class="setting-info">
+                    <i class="fa-solid fa-language"></i>
+
+                    <div>
+                        <h3>Language</h3>
+                        <p>Select your preferred language.</p>
+                    </div>
+                </div>
+
+                <button class="disabled-btn">
+                    Coming Soon
+                </button>
+
+            </div>
+
+
+
+            <!-- Data Management -->
+
+            <div class="setting-card">
+
+                <div class="setting-info">
+                    <i class="fa-solid fa-database"></i>
+
+                    <div>
+                        <h3>Data Management</h3>
+                        <p>Export or reset employee records.</p>
+                    </div>
+                </div>
+
+                <button class="disabled-btn">
+                    Coming Soon
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="sidebar.js"></script>
+<script src="theme.js"></script>
+
+</body>
+</html>

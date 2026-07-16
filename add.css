@@ -1,0 +1,100 @@
+.main{
+    width:50%;
+    max-width:1200px;
+    margin:40px auto;
+    font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+}
+
+form{
+    background:#7d7be61e;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap:wrap;
+    gap:18px;
+    margin-bottom:40px;
+    border:solid 1px #5e5ce6d0; 
+}
+
+form h2{
+    padding: 12px 22px;
+    color: #222;
+    font-weight: 600;
+    margin-bottom:10px;
+    font-size:26px;
+}
+
+form input[type="text"]{
+    flex:1;
+    min-width:220px;
+    background-color: #514fcb35;
+    padding:14px 18px;
+    border:1px solid #d9d9e8;
+    border-radius:12px;
+    outline:none;
+    font-size:15px;
+    width:90%;
+    transition:.3s;
+}
+
+form input[type="email"]{
+    flex:1;
+    min-width:220px;
+    background-color: #514fcb35;
+    padding:14px 18px;
+    border:1px solid #d9d9e8;
+    border-radius:12px;
+    outline:none;
+    font-size:15px;
+    width:90%;
+    transition:.3s;
+}
+
+form input[type="text"]:focus{
+    border-color:#5e5ce6d0;
+    background-color: white;
+    box-shadow:0 0 0 4px rgba(94,92,230,.12);
+}
+
+form input[type="email"]:focus{
+    border-color:#5e5ce6d0;
+    background-color: white;
+    box-shadow:0 0 0 4px rgba(94,92,230,.12);
+}
+
+form input[type="submit"]{
+    padding:14px 28px;
+    border:none;
+    border-radius:12px;
+    background:#5e4dd0ec;
+    color:#fff;
+    font-size:15px;
+    font-weight:500;
+    cursor:pointer;
+    transition:.3s;
+}
+
+form input[type="submit"]:hover{
+    background:#463ba5e1;
+}
+
+
+body.dark input,
+body.dark textarea,
+body.dark select{
+    background:#333;
+    color:white;
+}
+
+body.dark input::placeholder,
+body.dark textarea::placeholder{
+    color:#bbb;
+}
+
+body.dark form{
+    background:#1e1d1dc9;
+    border:1px solid white;
+}

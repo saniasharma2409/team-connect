@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="login.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="box signup">
+
+            <form class="signup-form">
+            <h1>Create Account</h1>
+
+            <div class="social">
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+            <span class="text">or use your email for registration</span>
+
+                <input required minlength="3" type="text" placeholder="username" id="username">
+                <input required type="email" placeholder="email" id="email">
+                <span class="error" id="signup-email-error"></span>
+                <input required type="password" placeholder="password" id="password">
+                <span class="error" id="signup-pass-error"></span>
+                <button type="submit" id="btns">Sign Up</button>
+            </form>
+
+        </div>
+
+
+
+        <div class="box signin">
+            <form class="signin-form">
+            <h1>Sign in</h1>
+
+            <div class="social">
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+            <span class="text">or use your account</span>
+
+                <input required type="email" placeholder="email" id="loginEmail">
+                <span class="error" id="signin-email-error"></span>
+                <input required type="password" placeholder="password" id="loginPassword">
+                <span class="error" id="signin-pass-error"></span>
+                <a href="#">Forgot your password?</a>
+                <button type="submit">Sign In</button>
+            </form>
+            
+        </div>
+
+        <div class="overlay-container">
+
+            <div class="overlay">
+
+            <div class="sliding left">
+                <h1>Welcome Back!</h1>
+                <p>Enter your personal details to use all of the site's features</p>
+                <button class="btn" id="signin">Sign In</button>
+             </div>
+
+             <div class="sliding right">
+                <h1>Hello, Friend!</h1>
+                <p>register with your personal details to start your journey with us</p>
+                <button class="btn" id="signup">Sign Up</button>
+             </div>
+
+            </div>
+        </div>
+    </div>    
+    <script src="login.js"></script>
+    <script src="theme.js"></script>
+</body>
+</html>

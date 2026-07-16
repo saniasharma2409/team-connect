@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+     <link rel="stylesheet" href="employees.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div>
+
+            <div class="logo">
+
+                <i class="fa-solid fa-users"></i>
+                <h2>Emply</h2>
+
+            </div>
+
+            
+
+           <ul class="menu">
+
+                <li id="dashboard">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Dashboard
+                </li>
+
+                <li id="employees">
+                    <i class="fa-solid fa-users"></i>
+                    Employees
+                </li>
+
+                <li id="settings">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </li>
+
+            </ul>     
+        </div>
+
+        <div class="logout">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+
+
+        <!-- Navbar -->
+
+        <header class="navbar">
+
+            <div class="title">
+
+                <h1>Employee</h1>
+                <p>search for employees here</p>
+
+            </div>
+
+
+
+            <div class="thought-navbar">
+
+                <h3>Thought of the Day</h3>
+
+                <p>
+                    Success comes from consistent efforts and dedication.
+                </p>
+
+            </div>
+
+
+
+            <div class="mprofile">
+
+                <img src="https://i.pravatar.cc/45" alt="profile">
+
+                <span>Admin</span>
+
+            </div>
+
+        </header>
+<div class="main">
+
+        <div class="top-controls">
+
+    <div class="search-container">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search employees..."
+        >
+
+    </div>
+
+    <div class="action-buttons">
+
+    <div class="filter-wrapper">
+
+    <div id="filterIcon" class="filter-btn">
+    <i class="fa-solid fa-filter"></i>
+    <span>Filter</span>
+</div>
+
+    <div class="filter-dropdown" id="filterDropdown">
+        <label>
+        <input type="checkbox" class="designationFilter" value="Development">
+        Development
+        </label>
+        <label>
+        <input type="checkbox" class="designationFilter" value="UI Design">
+        UI Design
+        </label>
+        <label>
+        <input type="checkbox" class="designationFilter" value="Marketing">
+        Marketing
+        </label>
+        <label>
+        <input type="checkbox" class="designationFilter" value="Human Resources">
+        HR
+        </label>
+    </div>
+
+</div>
+
+</div>
+</div>
+
+
+        <!--Cards Container-->
+        <div class="cards" id="cards">
+
+            <!--Reference Card-->
+
+           <!-- <div class="carde">
+          <div class="profile">
+          <img src="https://i.pinimg.com/736x/7b/fd/4e/7bfd4ee5060ccfe40fa3fdabdb750163.jpg" alt="Employee">
+           </div>
+          <div class="overlay">
+             <h2 id="h2">John Doe</h2>
+            <h4>Frontend Developer</h5>
+            <h6 id="email">test@gmail.com<h6>
+             <p>Frontend Developer who loves creating beautiful user interfaces.</p>
+            </div>
+            </div> -->
+            
+
+        </div>
+
+    </div>
+</div>
+<script src="employee.js"></script>
+<script src="sidebar.js"></script>
+<script src="theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#eef2f7;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    width:100vw;
+}
+
+.container{
+    position:relative;
+    min-height:550px;
+    width:900px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow:0 15px 35px rgba(0, 0, 0, 0.15);
+    overflow:hidden;
+}
+
+.box{
+    position:absolute;
+    width:50%;
+    height:100%;   
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    padding:12px 22px;
+}
+.signup{
+    right:0px;
+    transition: z-index .6s ease-in-out;
+    transition: transform .6s ease-in-out;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:80%;
+    justify-items: center;
+}
+
+input{
+    background-color: #f2f2f2;
+    border:none;
+    width:100%;
+    padding:13px 15px;
+    border-radius: 8px;
+    font-size:15px;
+    outline:none; 
+}
+#username{
+    margin: 8px 0;
+}
+
+input:focus{
+    border:2px solid #5f2eea;
+    transform:translateY(-3px);
+    background-color: #fffffff5;
+}
+
+button{
+    padding:12px 45px;
+    background:#4d1ed8eb;
+    border:none;
+    color:white;
+    border-radius: 30px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    margin-top: 16px;
+    transition: .26s;
+}
+button:hover{
+    background-color:#3d3387;
+    transform:scale(1.04);
+}
+
+a{
+    color:#666;
+    margin-top:6px;
+    font-size:13px;
+}
+a:hover{
+    color:#5f2eea;
+}
+
+.text{
+    font-size:15px;
+    color:#777;
+    margin:8px 0;
+}
+
+.error{
+    font-size:13px;
+    color:#a00404;
+    margin-bottom:8px;
+    position:relative;
+    width:100%;
+}
+
+form h1{
+    font-size:36px;
+    margin-bottom:20px;
+    color:#222;
+}
+
+.social{
+    display:flex;
+    gap:12px;
+    margin-bottom:10px;
+}
+
+.social a{
+    color:#444;
+    border: 1px solid #444;
+    height: 36px;
+    width: 36px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:10px;
+    text-decoration:none;
+    
+}
+.social a:hover{
+    background-color: #222;
+    color:#ffffff;
+}
+
+.overlay-container{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:50%;
+    z-index:10;
+    color:white;
+    overflow: hidden;
+    border-radius: 0 120px 120px 0;
+    transition: all .6s ease-in-out;
+}
+
+.overlay{
+    position:relative;
+    background:linear-gradient(180deg,#4b2d88,#4a3eba);
+    color: #ffffff;
+    width:200%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
+    transition: all .6s ease-in-out;
+}
+
+.sliding{
+    width:50%;
+    padding:40px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sliding h1{
+    font-size:34px;
+    font-weight: 400;
+    margin-bottom:20px;
+    color: white;
+}
+
+.sliding p{
+    font-size:15px;
+    line-height:1.6;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:#01000b58;
+    border:1px solid white;
+}
+
+
+
+
+.signup{
+    right:0;
+    z-index:1;
+    background-color: white;
+    transition: all .6s ease-in-out;
+}
+.signin{
+    right:0;
+    z-index:0;
+    background-color: white;
+    transition: all .6s ease-in-out;
+}
+
+.container.active .signup{
+    transform: translateX(-100%);
+    z-index:1;
+}
+
+.container.active .signin{
+    transform: translateX(-100%);
+    z-index:2;
+}
+
+.container.active .overlay{
+    transform: translateX(-50%);
+}
+
+.container.active .overlay-container{
+    transform: translateX(100%);
+    border-radius: 120px 0 0 120px;
+}
+
+
+body.dark{
+    background:#151515bb;
+    color:white;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark p,
+body.dark span,
+body.dark td,
+body.dark th{
+    color:white;
+}
+
+body.dark input,
+body.dark textarea,
+body.dark select{
+    background:#333333d1;
+    color:white;
+}
+
+body.dark input::placeholder,
+body.dark textarea::placeholder{
+    color:#bbb;
+}
+
+
+body.dark .box{
+    background:#252525;
+    color:white;
+}
+
+body.dark .overlay{
+background:#333;
+}
+
+body.dark .container{
+    background:#252525;
+}
+
+body.dark button{
+    background:#333333d1
+}
