@@ -183,6 +183,9 @@ This project helped me strengthen my understanding of:
 - API Integration
 - Cloud Deployment
 
+# Preview
+Go through this video
+https://github.com/saniasharma2409/team-connect/blob/main/team-connect-preview.mp4
 
 # Why TeamConnect?
 
